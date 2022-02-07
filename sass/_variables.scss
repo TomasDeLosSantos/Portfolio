@@ -1,0 +1,10 @@
+@mixin max__width {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+@mixin flex__config($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $justify;
+}

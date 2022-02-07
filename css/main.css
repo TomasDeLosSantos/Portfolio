@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+/*  Custom CSS Reset by Josh Comeau  */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif; }
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; }
+
+input, button, textarea, select {
+  font: inherit; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word; }
+
+/*  https://www.joshwcomeau.com/css/custom-css-reset/  */
+.nav {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px; }
+  .nav__logo {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 200px;
+    padding: 10px; }
+  .nav__ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    width: 25vw;
+    font-size: 2rem;
+    font-weight: 300; }
+  .nav__link {
+    text-decoration: none;
+    color: #000;
+    margin: 0 0.5rem; }
+
+.hero {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 70vh;
+  margin-bottom: 15rem; }
+  .hero__title {
+    font-size: 5.875rem;
+    line-height: 1.3; }
+  .hero__para {
+    font-size: 2.25rem; }
+  .hero__btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start; }
+  .hero__btn {
+    display: block;
+    width: fit-content;
+    font-size: 1.875rem;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-top: 2rem; }
+  .hero__secBtn {
+    display: block;
+    width: fit-content;
+    font-size: 1.875rem;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin-top: 2rem;
+    margin-left: 2rem; }
+  .hero__img {
+    width: 500px; }
