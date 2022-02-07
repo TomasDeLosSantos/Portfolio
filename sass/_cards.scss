@@ -1,0 +1,234 @@
+.card{
+    display: block;
+    min-height: 100vh;
+    padding-top: 5rem;
+    max-width: 1320px;
+    margin: 0 auto;
+    &__background{
+        background: rgb(255,0,108);
+        background: linear-gradient(45deg, rgba(255,0,108,1) 0%, rgba(4,40,96,1) 100%);
+    }
+    &-title{
+        @extend .hero__title;
+        margin-bottom: 2rem;
+    }
+    &__container{
+        position: relative;
+        overflow: hidden;
+        height: 600px;
+        width: 400px;
+        margin: auto;
+        background-image: url("../assets/card__img.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+        @include flex__config(column, start, space-between);
+        &:hover{
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+            .card__data{
+                bottom: 1rem;
+            }
+        }
+        transition: all 1s;
+    }
+    &__subtitle{
+        color: #fff;
+        font-size: 1.5625rem;
+        margin-left: 1rem;
+        padding-top: 0.5rem;
+    }
+    &__data{
+        position: absolute;
+        bottom: -190px;
+        transition: all 1s;
+    }
+    &__title{
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    &__para{
+        color: #fff;
+        font-size: 1.5625rem;
+        margin-left: 1rem;
+    }
+    &__btn{
+        background-color: #fff;
+        color: #000;
+        padding: 0.1rem 0.5rem;
+        margin-left: 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+
+    &__container2{
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+        width: 1200px;
+        margin: 1rem auto;
+        background-image: url("../assets/card__img.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+        @include flex__config(column, start, space-between);
+        &:hover{
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+            .card__data2{
+                bottom: 1rem;
+            }
+        }
+        transition: all 1s;
+    }
+    &__subtitle2{
+        color: #fff;
+        font-size: 1.5625rem;
+        margin-left: 1rem;
+        padding-top: 0.5rem;
+    }
+    &__data2{
+        position: absolute;
+        bottom: -116px;
+        transition: all 1s;
+    }
+    &__title2{
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    &__para2{
+        color: #fff;
+        font-size: 1.5625rem;
+        margin-left: 1rem;
+    }
+    &__btn2{
+        background-color: #fff;
+        color: #000;
+        padding: 0.1rem 0.5rem;
+        margin-left: 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+}
+
+.card2{
+    display: block;
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+    padding-top: 5rem;
+    max-width: 1320px;
+    margin: 0 auto;
+    &__container3{
+        position: relative;
+        height: 500px;
+        width: 1200px;
+        margin: 1rem auto;
+        border-radius: 30px;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+        @include flex__config(column, end, center);
+        overflow: hidden;
+        &::after{
+            content: '';
+            width: 80px;
+            height: 80px;
+            background-color: rgba($color: #8a2be2, $alpha: 1);
+            border-radius: 100%;
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+        &:hover{
+            .card2__para3{
+                visibility: visible;
+            }
+            .card2__btn3{
+                visibility: visible;
+            }
+            .card2__img{
+                filter: grayscale(0);
+            }
+            &::after{
+                transform: scale(15);
+                background-color: rgba($color: #8a2be2, $alpha: 0.5);;
+            }
+        }
+        transition: all 1s;
+    }
+    &__img{
+        position: absolute;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        filter: grayscale(100%);
+    }
+    &__subtitle3{
+        color: #fff;
+        font-size: 1.5625rem;
+        margin-left: 1rem;
+        padding-top: 0.5rem;
+        text-align: end;
+        padding-right: 1.5rem;
+        z-index: 10;
+    }
+    &__title3{
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        text-align: end;
+        padding-right: 1.5rem;
+        z-index: 10;
+        text-transform: uppercase;
+    }
+    &__para3{
+        color: #fff;
+        font-size: 1.5625rem;
+        margin-left: 1rem;
+        text-align: end;
+        max-width: 50%;
+        visibility: hidden;
+        padding-right: 1.5rem;
+        z-index: 10;
+        transition: visibility-visible 0.5s ease;
+    }
+    &__btn3{
+        background-color: #fff;
+        color: #000;
+        padding: 0.1rem 0.5rem;
+        margin-left: 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        visibility: hidden;
+        margin-right: 1.5rem;
+        z-index: 10;
+        transition: visibility-visible 0.5s ease;
+    }
+    
+}
+.flex__row{
+    @include flex__config(row, center, center);
+}
+.flex__col{
+    @include flex__config(column, center, center);
+}

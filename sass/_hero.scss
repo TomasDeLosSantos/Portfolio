@@ -1,6 +1,6 @@
 .hero{
     @include max__width;
-    @include flex__config(row, space-between);
+    @include flex__config(row, center, space-between);
     flex-wrap: wrap;
     height: 70vh;
     margin-bottom: 15rem;
@@ -12,7 +12,7 @@
         font-size: 2.25rem;
     }
     &__btns{
-        @include flex__config(row, start);
+        @include flex__config(row, center, start);
     }
     &__btn{
         display: block;
