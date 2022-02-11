@@ -1,36 +1,37 @@
 body{
-    background-color: #212121;
+    background-color: #F8E5D6;
 }
 .hero{
     @include max__width;
-    @include flex__config(row, center, space-between);
+    @include flex__config(row, center, space-evenly);
     flex-wrap: wrap;
     height: 70vh;
     margin-bottom: 15rem;
-    background-color: #212121;
+    //background-color: #212121;
     position: relative;
     &__title{
         font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 4.5rem;
         line-height: 1.1;
-        color: #fff;
-        text-align: center;
+        color: #000;
+        text-align: start;
         span{
             color: #0046FF;
         }
     }
     &__para{
         font-size: 1.8rem;
-        color: #fff;
+        color: #000;
     }
     &__btns{
-        @include flex__config(row, center, center);
+        @include flex__config(row, center, start);
     }
     &__btn{
         display: block;
         width: fit-content;
         font-size: 1.8rem;
+        font-weight: 300;
         text-decoration: none;
         background-color: #0046FF;
         color: #fff;
@@ -54,13 +55,4 @@ body{
         width: 200px;
         color: #0046FF;
     }
-}
-.custom-shape-divider-bottom-1644502291 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    color: #0046FF;
 }

@@ -1,0 +1,11 @@
+.skills{
+    @include flex__config(row, center, start);
+    max-width: 1320px;
+    margin: auto;   
+    border-top: 2px solid #000;
+    padding: 5rem 0;
+
+    &__title{
+        font-size: 2rem;
+    }
+}
