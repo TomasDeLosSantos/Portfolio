@@ -5,20 +5,28 @@
     padding: 10px 0px;
     &__logo{
         background-color: rgba($color: #000000, $alpha: 0.3);
-        width: 200px;
+        width: 150px;
         padding: 10px;
-        
     }
     &__ul{
-        @include flex__config(row, center, end);
+        @include flex__config(row, center, center);
         list-style: none;
-        width: 25vw;
-        font-size: 2rem;
+        //width: 25vw;
+        font-size: 1.8rem;
         font-weight: 300;
+        padding: 0;
     }
     &__link{
         text-decoration: none;
-        color: #000;
+        color: $acc1;
         margin: 0 0.5rem;
+        &-login{
+            text-decoration: none;
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            background-color: $acc1;
+            color: #fff;
+        }
     }
 }

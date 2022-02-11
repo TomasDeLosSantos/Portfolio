@@ -1,5 +1,13 @@
+$main-color: #080705;
+$acc1: #088EDA;
+$acc2: #D3B88C;
+$acc3: #14FFEC;
+$white: #fff;
+$black: #000;
+$grey: #5A5E65;
+
 body{
-    background-color: #F8E5D6;
+    background-color: $main-color;
 }
 .hero{
     @include max__width;
@@ -14,15 +22,13 @@ body{
         font-weight: 500;
         font-size: 4.5rem;
         line-height: 1.1;
-        color: #000;
+        color: $white;
         text-align: start;
-        span{
-            color: #0046FF;
-        }
     }
     &__para{
         font-size: 1.8rem;
-        color: #000;
+        color: $white;
+        font-weight: 100;
     }
     &__btns{
         @include flex__config(row, center, start);
@@ -31,9 +37,9 @@ body{
         display: block;
         width: fit-content;
         font-size: 1.8rem;
-        font-weight: 300;
+        font-weight: 400;
         text-decoration: none;
-        background-color: #0046FF;
+        background: $acc1;
         color: #fff;
         padding: 10px;
         margin-top: 2rem;
@@ -43,8 +49,9 @@ body{
         width: fit-content;
         font-size: 1.8rem;
         text-decoration: none;
-        color: #0046FF;
-        padding: 10px;
+        border: 2px solid $acc1;
+        color: $acc1;
+        padding: 10px 20px;
         margin-top: 2rem;
         margin-left: 2rem;
     }
