@@ -1,0 +1,22 @@
+.aboutme{
+    @include flex__config(row, center, center);
+    max-width: 1320px;
+    margin: auto;
+    border: 3px solid #000;
+    height: 40vh;
+    &__img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+    &__col{ 
+        &-l{
+            @include flex__config(column, center, center);
+            width: 40%;
+        }
+        &-r{
+            @include flex__config(column, start, start);
+        }
+    }
+}
