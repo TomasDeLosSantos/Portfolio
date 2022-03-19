@@ -4,8 +4,15 @@
     margin: auto;   
     border-top: 1px solid $grey;
     padding: 5rem 0;
+    
+    
+    &__bg{
+        position: relative;
+        z-index: 10;
+    }
 
     &__title{
+        margin-top: 4rem;
         font-size: 2rem;
         color: $white
     }

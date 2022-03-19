@@ -1,20 +1,25 @@
-$col-height: 600px;
+//$col-height: 600px;
 
 .qualif{
     //@include flex__config(row, center, start);
     max-width: 1320px;
     margin: auto;   
-    border-top: 1px solid $grey;
+    //border-top: 1px solid $grey;
     padding: 5rem 0;
-
+    &__bg{
+        position: relative;
+        background: rgb(0,141,213);
+        background: linear-gradient(0deg, rgba(0,141,213,1) 0%, rgba(255,165,82,0) 100%);
+    }
     &__title{
         font-size: 2rem;
         color: $white;
         text-align: center; 
+        margin-top: 4rem;
         margin-bottom: 3rem;
     }
     &__row{
-        @include flex__config(row, center, space-evenly);
+        @include flex__config(row, start, space-evenly);
         //height: $col-height;
     }
 }

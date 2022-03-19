@@ -6,43 +6,51 @@ $white: #fff;
 $black: #000;
 $grey: #5A5E65;
 
+$blue: #008DD5;
+$orange: #FFA552;
+
 body{
     background-color: $main-color;
 }
 .hero{
+    position: relative;
     @include max__width;
-    @include flex__config(row, center, space-evenly);
-    flex-wrap: wrap;
-    height: 70vh;
-    margin-bottom: 15rem;
+    @include flex__config(column, center, center);
+    height: 90vh;
+    //margin-bottom: 15rem;
     //background-color: #212121;
     position: relative;
+    &__text{
+        margin-bottom: 5rem;
+    }
     &__title{
         font-family: 'IBM Plex Sans Thai Looped', sans-serif;
         font-weight: 500;
         font-size: 4.5rem;
         line-height: 1.1;
         color: $white;
-        text-align: start;
+        text-align: center;
     }
     &__para{
         font-size: 1.8rem;
         color: $white;
         font-weight: 100;
+        text-align: center;
     }
     &__btns{
-        @include flex__config(row, center, start);
+        @include flex__config(row, center, space-evenly);
     }
     &__btn{
         display: block;
         width: fit-content;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: 400;
         text-decoration: none;
-        background: $acc1;
+        background: $orange;
         color: #fff;
-        padding: 10px;
-        margin-top: 2rem;
+        padding: 10px 15px;
+        margin: 0rem 1rem;
+        border-radius: 10px;
     }
     &__secBtn{
         display: block;
@@ -62,4 +70,25 @@ body{
         width: 200px;
         color: #0046FF;
     }
+}
+
+.custom-shape-divider-bottom-1647639369 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1647639369 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1647639369 .shape-fill {
+    fill: #0C0F16;
 }

@@ -12,7 +12,10 @@
     <script src="https://kit.fontawesome.com/0bfe678821.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <main>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <nav class="nav">
             <img src="assets/AP__logo.png" alt="Logo Argentina Programa" class="nav__logo">
             <ul class="nav__ul">
@@ -25,174 +28,205 @@
             </ul>
             <a class="nav__link-login" href="#">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         </nav>
-    </header>
-    <main>
         <section class="hero">
-            <article>
-                <h1 class="hero__title">Tu diseño, <br> Hecho realidad</h1>
-                <p class="hero__para">Mi nombre es Tomás y estoy acá para <br> llevar tu idea al siguiente nivel.</p>
-                <div class="hero__btns">
-                    <a class="hero__btn" href="">CONTACTAME</a>
-                    <a class="hero__secBtn" href="">SOBRE MÍ</a>
-                </div>
-            </article>
-            <article>
-                <img src="assets/svg/hero__img9.svg" alt="" class="hero__img">
+            <article class="hero__text">
+                <h3 class="hero__para">Hello World!</h3>
+                <h1 class="hero__title">Tomás De Los Santos</h1>
+                <h2 class="hero__para">Fullstack Web Developer</h2>
             </article>
             
-        </section>
-
-        <section class="aboutme">
-            <article class="aboutme__col-l">
-                <!--
-                <h2 class="aboutme__title">Tomás De Los Santos</h2>
-                <h3 class="aboutme__sub">Developer Fullstack</h3>
-                -->
-                <img class="aboutme__img" src="assets/pfp.jpg" alt="">
+            <div class="hero__btns">
+                <a class="hero__btn" href="">About me</a>
+                <a class="hero__btn" href="">Qualifications</a>
+                <a class="hero__btn" href="">Skills</a>
+                <a class="hero__btn" href="">Portfolio</a>
+                <!-- <a class="hero__secBtn" href="">SOBRE MÍ</a> -->
                 
-            </article>
-            <article class="aboutme__col-r">
-                <h2 class="aboutme__title">Tomás De Los Santos - Fullstack Developer</h2>
-                <p class="aboutme__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat saepe quibusdam magni quasi, nemo, ea unde voluptates dolore non modi numquam alias neque perferendis minima earum nesciunt soluta voluptatum facilis suscipit adipisci dolores! Nam accusantium obcaecati in maxime eligendi, sint, ducimus perspiciatis </p>
-                <a class="aboutme__btn hero__btn" href="#">Descargar CV</a>
-            </article>
-        </section>
-        
-        <section class="qualif">
-            <h2 class="qualif__title">Capacitación</h2>
-            <div class="qualif__row">
-                <article class="edu">
-                    <h2 class="edu__title">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                         Educación
-                    </h2>
-                    <div class="edu__cont">
-                        <div class="edu__cont-icon">
-                        </div>
-                        <div class="edu__cont-data">
-                            <h3 class="edu__cont-title">
-                                Ciencias de la Computación
-                            </h3>
-                            <h4 class="edu__cont-sub">
-                                Marzo 2019 - Presente   
-                            </h4>
-                            <p class="edu__cont-para">
-                                Universidad de Buenos Aires
-                            </p>
-                            <a href="" class="edu__cont-link">
-                                Certificado
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="edu__cont">
-                        <div class="edu__cont-icon">
-                        </div>
-                        <div class="edu__cont-data">
-                            <h3 class="edu__cont-title">
-                                Desarrollador Fullstack
-                            </h3>
-                            <h4 class="edu__cont-sub">
-                                Febrero 2022 - Agosto 2022
-                            </h4>
-                            <p class="edu__cont-para">
-                                Argentina Programa
-                            </p>
-                            <a href="" class="edu__cont-link">
-                                Certificado
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="edu__cont">
-                        <div class="edu__cont-icon">
-                        </div>
-                        <div class="edu__cont-data">
-                            <h3 class="edu__cont-title">
-                                Desarrollador fullstack
-                            </h3>
-                            <h4 class="edu__cont-sub">
-                                Diciembre 2021 - Diciembre 2022
-                            </h4>
-                            <p class="edu__cont-para">
-                                Coderhouse
-                            </p>
-                            <a href="" class="edu__cont-link">
-                                Certificado
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="edu__cont">
-                        <div class="edu__cont-icon">
-                        </div>
-                        <div class="edu__cont-data">
-                            <h3 class="edu__cont-title">
-                                Técnico Electrónico
-                            </h3>
-                            <h4 class="edu__cont-sub">
-                                Marzo 2012 - Diciembre 2019
-                            </h4>
-                            <p class="edu__cont-para">
-                                Escuela Secundaria Técnica Florentino Ameghino
-                            </p>
-                            <a href="" class="edu__cont-link">
-                                Certificado
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="exp">
-                    <h2 class="exp__title">
-                        <i class="fa-solid fa-briefcase"></i>
-                         Experiencia
-                    </h2>
-                    <div class="exp__cont">
-                        <div class="exp__cont-icon">
-                        </div>
-                        <div class="exp__cont-data">
-                            <h3 class="exp__cont-title">
-                                Proyectos Personales
-                            </h3>
-                            <h4 class="exp__cont-sub">
-                                2019 - Presente
-                            </h4>
-                            <p class="exp__cont-para">
-                                Trabajos realizados como parte de cursos, tutoriales o durante el estudio autodidacta de alguna tecnología.
-                            </p>
-                            <a href="" class="edu__cont-link">
-                                Portfolio
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="exp__cont">
-                        <div class="exp__cont-icon">
-                        </div>
-                        <div class="exp__cont-data">
-                            <h3 class="exp__cont-title">
-                                Instituto Argentino de Radioastronomía
-                            </h3>
-                            <h4 class="exp__cont-sub">
-                                Agosto 2019 - Diciembre 2019
-                            </h4>
-                            <h4 class="exp__cont-sub">
-                                Pasantía
-                            </h4>
-                            <p class="exp__cont-para">
-                                Desarrollo de un sistema de refrigeración para dispositivos electrónicos basado en arduino.
-                            </p>
-                            <a href="" class="edu__cont-link">
-                                Ver Proyecto
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
             </div>
+
         </section>
+        <div class="custom-shape-divider-bottom-1647639369">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="aboutme__bg">
+            <section class="aboutme">
+                <article class="aboutme__col-l">
+                    <!--
+                    <h2 class="aboutme__title">Tomás De Los Santos</h2>
+                    <h3 class="aboutme__sub">Developer Fullstack</h3>
+                    -->
+                    <img class="aboutme__img" src="assets/pfp.jpg" alt="">
+                    
+                </article>
+                <article class="aboutme__col-r">
+                    <h2 class="aboutme__title">Tomás De Los Santos - Fullstack Developer</h2>
+                    <p class="aboutme__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat saepe quibusdam magni quasi, nemo, ea unde voluptates dolore non modi numquam alias neque perferendis minima earum nesciunt soluta voluptatum facilis suscipit adipisci dolores! Nam accusantium obcaecati in maxime eligendi, sint, ducimus perspiciatis </p>
+                    <a class="aboutme__btn hero__btn" href="#">Descargar CV</a>
+                </article>
+            </section>
+        </div>
+        
+        <div class="qualif__bg">
+            <div class="custom-shape-divider-top-1647640192">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <section class="qualif">
+                <h2 class="qualif__title">Capacitación</h2>
+                <div class="qualif__row">
+                    <article class="edu">
+                        <h2 class="edu__title">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                             Educación
+                        </h2>
+                        <div class="edu__cont">
+                            <div class="edu__cont-icon">
+                            </div>
+                            <div class="edu__cont-data">
+                                <h3 class="edu__cont-title">
+                                    Ciencias de la Computación
+                                </h3>
+                                <h4 class="edu__cont-sub">
+                                    Universidad de Buenos Aires
+                                </h4>
+                                <p class="edu__cont-para">
+                                    Marzo 2019 - Diciembre 2027
+                                </p>
+                                <a href="" class="edu__cont-link">
+                                    Certificado
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="edu__cont">
+                            <div class="edu__cont-icon">
+                            </div>
+                            <div class="edu__cont-data">
+                                <h3 class="edu__cont-title">
+                                    Técnico Electrónico
+                                </h3>
+                                <h4 class="edu__cont-sub">
+                                    EST Florentino Ameghino
+                                </h4>
+                                <p class="edu__cont-para">
+                                    Marzo 2012 - Diciembre 2019
+                                </p>
+                                <a href="" class="edu__cont-link">
+                                    Certificado
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="edu">
+                        <h2 class="edu__title">
+                            <i class="fa-solid fa-award"></i>
+                             Cursos
+                        </h2>
+                        
+                        <div class="edu__cont">
+                            <div class="edu__cont-icon">
+                            </div>
+                            <div class="edu__cont-data">
+                                <h3 class="edu__cont-title">
+                                    Desarrollador Web fullstack
+                                </h3>
+                                <h4 class="edu__cont-sub">
+                                    Coderhouse
+                                </h4>
+                                <p class="edu__cont-para">
+                                    Noviembre 2021 - Diciembre 2022
+                                </p>
+                                <a href="" class="edu__cont-link">
+                                    Certificado
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="edu__cont">
+                            <div class="edu__cont-icon">
+                            </div>
+                            <div class="edu__cont-data">
+                                <h3 class="edu__cont-title">
+                                    Desarrollador Web Fullstack
+                                </h3>
+                                <h4 class="edu__cont-sub">
+                                    Argentina Programa
+                                </h4>
+                                <p class="edu__cont-para">
+                                    Febrero 2022 - Agosto 2022
+                                </p>
+                                <a href="" class="edu__cont-link">
+                                    Certificado
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="edu__cont">
+                            <div class="edu__cont-icon">
+                            </div>
+                            <div class="edu__cont-data">
+                                <h3 class="edu__cont-title">
+                                    Diseño de Videojuegos
+                                </h3>
+                                <h4 class="edu__cont-sub">
+                                    Universidad Tecnológica Nacional
+                                </h4>
+                                <p class="edu__cont-para">
+                                    Febrero 2021 - Junio 2021
+                                </p>
+                                <a href="" class="edu__cont-link">
+                                    Certificado
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>  
+                    </article>
+                    <article class="exp">
+                        <h2 class="exp__title">
+                            <i class="fa-solid fa-briefcase"></i>
+                             Experiencia
+                        </h2>
+                        
+                        <div class="exp__cont">
+                            <div class="exp__cont-icon">
+                            </div>
+                            <div class="exp__cont-data">
+                                <h3 class="exp__cont-title">
+                                    Instituto Argentino de Radioastronomía
+                                </h3>
+                                <h4 class="exp__cont-sub">
+                                    Pasantía
+                                </h4>
+                                <h4 class="exp__cont-para">
+                                    Agosto 2019 - Diciembre 2019
+                                </h4>
+                                <p class="exp__cont-para">
+                                    Desarrollo de un sistema de refrigeración para dispositivos electrónicos basado en arduino.
+                                </p>
+                                <a href="" class="edu__cont-link">
+                                    Ver Proyecto
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+    
+                </div>
+            </section>
+
+        </div>
+        
 
         <!--
         <section class="exp">
@@ -203,211 +237,195 @@
             <h2 class="edu__title">Educación</h2>
         </section>
         -->
-        <section class="skills">
-            <h2 class="skills__title">Hard & Soft Skills</h2>
-            <div class="skills__row">
-                <div class="skills__cont">
-                    <i class="fa-solid fa-globe skills__icon"></i>
-                    <h3 class="skills__sub">Frontend</h3>
-                    <p class="skills__para">
-                        <ul>
-                            <li class="skills__para"> Tecnologías: HTML5, CSS3, Javascript (ES6).</li>
-                            <li class="skills__para">Frameworks y herramientas: SASS, Bootstrap, Angular, React.</li>
-                        </ul>
-                    </p>
-                    <div class="skills__row">
-                        <i class="skills__logo fa-brands fa-html5"></i>
-                        <i class="skills__logo fa-brands fa-css3-alt"></i>
-                        <i class="skills__logo fa-brands fa-bootstrap"></i>
-                        <i class="skills__logo fa-brands fa-js"></i>
-                        <i class="skills__logo fa-brands fa-react"></i>
-                    </div>
-                </div>
-                <div class="skills__cont forty">
-                    <i class="fa-solid fa-globe skills__icon"></i>
-                    <h3 class="skills__sub">Backend</h3>
-                    <p class="skills__para">
-                        <ul>
-                            <li class="skills__para"> Tecnologías: Javascript (ES6), Java, SQL, MongoDB y Firebase.</li>
-                            <li class="skills__para">Frameworks y herramientas: Spring Boot, Node, MySQL.</li>
-                        </ul>
-                    </p>
-                    <div class="skills__row">
-                        <i class="skills__logo fa-brands fa-html5"></i>
-                        <i class="skills__logo fa-brands fa-css3-alt"></i>
-                        <i class="skills__logo fa-brands fa-bootstrap"></i>
-                        <i class="skills__logo fa-brands fa-js"></i>
-                        <i class="skills__logo fa-brands fa-react"></i>
-                    </div>
-                </div>
-                <div class="skills__cont">
-                    <i class="fa-solid fa-globe skills__icon"></i>
-                    <h3 class="skills__sub">Idiomas</h3>
-                    <p class="skills__para">
-                        <ul>
-                            <li class="skills__para"> Español (Nativo).</li>
-                            <li class="skills__para">Inglés Avanzado. Nivel CEFR B2, exámen Anglia con distinción (+80%) .</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="skills__cont">
-                    <i class="fa-solid fa-globe skills__icon"></i>
-                    <h3 class="skills__sub">Frontend</h3>
-                    <p class="skills__para">
-                        <ul>
-                            <li class="skills__para"> Tecnologías: HTML5, CSS3, Javascript (ES6).</li>
-                            <li class="skills__para">Frameworks y herramientas: SASS, Bootstrap, Angular, React.</li>
-                        </ul>
-                    </p>
-                    <div class="skills__row">
-                        <i class="skills__logo fa-brands fa-html5"></i>
-                        <i class="skills__logo fa-brands fa-css3-alt"></i>
-                        <i class="skills__logo fa-brands fa-bootstrap"></i>
-                        <i class="skills__logo fa-brands fa-js"></i>
-                        <i class="skills__logo fa-brands fa-react"></i>
-                    </div>
-                </div>
-                <div class="skills__cont">
-                    <i class="fa-solid fa-globe skills__icon"></i>
-                    <h3 class="skills__sub">Frontend</h3>
-                    <p class="skills__para">
-                        <ul>
-                            <li class="skills__para"> Tecnologías: HTML5, CSS3, Javascript (ES6).</li>
-                            <li class="skills__para">Frameworks y herramientas: SASS, Bootstrap, Angular, React.</li>
-                        </ul>
-                    </p>
-                    <div class="skills__row">
-                        <i class="skills__logo fa-brands fa-html5"></i>
-                        <i class="skills__logo fa-brands fa-css3-alt"></i>
-                        <i class="skills__logo fa-brands fa-bootstrap"></i>
-                        <i class="skills__logo fa-brands fa-js"></i>
-                        <i class="skills__logo fa-brands fa-react"></i>
-                    </div>
-                </div>
-                <div class="skills__cont">
-                    <i class="fa-solid fa-globe skills__icon"></i>
-                    <h3 class="skills__sub">Frontend</h3>
-                    <p class="skills__para">
-                        <ul>
-                            <li class="skills__para"> Tecnologías: HTML5, CSS3, Javascript (ES6).</li>
-                            <li class="skills__para">Frameworks y herramientas: SASS, Bootstrap, Angular, React.</li>
-                        </ul>
-                    </p>
-                    <div class="skills__row">
-                        <i class="skills__logo fa-brands fa-html5"></i>
-                        <i class="skills__logo fa-brands fa-css3-alt"></i>
-                        <i class="skills__logo fa-brands fa-bootstrap"></i>
-                        <i class="skills__logo fa-brands fa-js"></i>
-                        <i class="skills__logo fa-brands fa-react"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="skills__bg">
+            <section class="skills">
+                <h2 class="skills__title">Skills</h2>
 
-        <section class="port">
-            <h2 class="port__title">Portfolio</h2>
-            <article class="card">
-                <div class="card__row">
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/axie101.png" alt="">
-                        <p class="card-s__sub">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
-                        </p>
-                        <h2 class="card-s__title">Axie101</h2>
-                        <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn" href="">Saber más</a>
-                    </article>
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/portfolio.png" alt="">
-                        <p class="card-s__sub dark">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-angular"></i>
-                        </p>
-                        <h2 class="card-s__title dark">Portfolio</h2>
-                        <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn dark" href="">Saber más</a>
-                    </article>
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/axie101.png" alt="">
-                        <p class="card-s__sub">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
-                        </p>
-                        <h2 class="card-s__title">Axie101</h2>
-                        <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn" href="">Saber más</a>
-                    </article>
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/portfolio.png" alt="">
-                        <p class="card-s__sub dark">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-angular"></i>
-                        </p>
-                        <h2 class="card-s__title dark">Portfolio</h2>
-                        <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn dark" href="">Saber más</a>
-                    </article>
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/axie101.png" alt="">
-                        <p class="card-s__sub">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
-                        </p>
-                        <h2 class="card-s__title">Axie101</h2>
-                        <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn" href="">Saber más</a>
-                    </article>
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/portfolio.png" alt="">
-                        <p class="card-s__sub dark">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-angular"></i>
-                        </p>
-                        <h2 class="card-s__title dark">Portfolio</h2>
-                        <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn dark" href="">Saber más</a>
-                    </article>
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/axie101.png" alt="">
-                        <p class="card-s__sub">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
-                        </p>
-                        <h2 class="card-s__title">Axie101</h2>
-                        <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn" href="">Saber más</a>
-                    </article>
-                    <article class="card-s__cont">
-                        <img class="card-s__img" src="assets/portfolio.png" alt="">
-                        <p class="card-s__sub dark">
-                            <i class="fa-brands fa-html5"></i> 
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-angular"></i>
-                        </p>
-                        <h2 class="card-s__title dark">Portfolio</h2>
-                        <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
-                        <a class="card-s__btn dark" href="">Saber más</a>
-                    </article>
-                    <!--
-                    <div class="card__add">
-                        <i class="fa-solid fa-plus"></i>
+
+                <div class="skills__main">
+                    <div class="skills__cont">
+                        <h3 class="skills__sub">Frontend</h3>
+                        <div class="skills__row">
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">HTML5</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">CSS3</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">Javascript</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">Bootstrap</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">SASS</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">React</h4>
+                            </div>
+
+                        </div>
                     </div>
-                    -->
+
+                    <div class="skills__cont">
+                        <h3 class="skills__sub">Backend</h3>
+                        <div class="skills__row">
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">HTML5</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">CSS3</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">Javascript</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">Bootstrap</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">SASS</h4>
+                            </div>
+                            <div class="skills__col">
+                                <i class="fa-brands fa-html5 skills__logo"></i>
+                                <h4 class="skills__sub">React</h4>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </section>
+            </section>
+        </div>
+
+
+        <div class="port__bg">
+            <div class="custom-shape-divider-top-1647640737">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+
+
+            <section class="port">
+                <h2 class="port__title">Portfolio</h2>
+                <article class="card">
+                    <div class="card__row">
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/axie101.png" alt="">
+                            <p class="card-s__sub">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </p>
+                            <h2 class="card-s__title">Axie101</h2>
+                            <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn" href="">Saber más</a>
+                        </article>
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/portfolio.png" alt="">
+                            <p class="card-s__sub dark">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-angular"></i>
+                            </p>
+                            <h2 class="card-s__title dark">Portfolio</h2>
+                            <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn dark" href="">Saber más</a>
+                        </article>
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/axie101.png" alt="">
+                            <p class="card-s__sub">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </p>
+                            <h2 class="card-s__title">Axie101</h2>
+                            <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn" href="">Saber más</a>
+                        </article>
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/portfolio.png" alt="">
+                            <p class="card-s__sub dark">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-angular"></i>
+                            </p>
+                            <h2 class="card-s__title dark">Portfolio</h2>
+                            <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn dark" href="">Saber más</a>
+                        </article>
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/axie101.png" alt="">
+                            <p class="card-s__sub">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </p>
+                            <h2 class="card-s__title">Axie101</h2>
+                            <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn" href="">Saber más</a>
+                        </article>
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/portfolio.png" alt="">
+                            <p class="card-s__sub dark">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-angular"></i>
+                            </p>
+                            <h2 class="card-s__title dark">Portfolio</h2>
+                            <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn dark" href="">Saber más</a>
+                        </article>
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/axie101.png" alt="">
+                            <p class="card-s__sub">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </p>
+                            <h2 class="card-s__title">Axie101</h2>
+                            <p class="card-s__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn" href="">Saber más</a>
+                        </article>
+                        <article class="card-s__cont">
+                            <img class="card-s__img" src="assets/portfolio.png" alt="">
+                            <p class="card-s__sub dark">
+                                <i class="fa-brands fa-html5"></i> 
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-angular"></i>
+                            </p>
+                            <h2 class="card-s__title dark">Portfolio</h2>
+                            <p class="card-s__para dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique odit reiciendis. Explicabo, ipsa suscipit.</p>
+                            <a class="card-s__btn dark" href="">Saber más</a>
+                        </article>
+                        <!--
+                        <div class="card__add">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        -->
+                    </div>
+                </article>
+            </section>
+        </div>
+
     </main>
 </body>
 </html>

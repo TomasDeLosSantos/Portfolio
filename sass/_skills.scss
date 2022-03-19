@@ -43,22 +43,22 @@ Facilidad y motivación para aprender cosas nuevas
 .skills{
     max-width: 1320px;
     margin: auto;   
-    border-top: 1px solid $grey;
-    padding: 5rem 0;
-    &__grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
+    //border-top: 1px solid $grey;
+    //padding: 5rem 0;
+    &__bg{
+        position: relative;
+        z-index: 10;
+        background-color: #008DD5;
     }
-
     &__title{
         font-size: 2rem;
         color: $white;
+        text-align: center;
     }
     &__sub{
         font-size: 1.8rem;
         margin-bottom: 0.5rem;
+        text-align: center;
     }
     &__para{
         font-size: 1.2rem;
@@ -66,9 +66,8 @@ Facilidad y motivación para aprender cosas nuevas
     }
     &__cont{
         position: relative;
-        width: 400px;
-        height: 350px;
-        background-color: $white;
+        width: 40%;
+        //background-color: $white;
         color: $main-color;
         padding-top: 2.8rem;
         padding-left: 1rem;
@@ -77,12 +76,20 @@ Facilidad y motivación para aprender cosas nuevas
         display: inline-block;
         box-sizing: border-box;
         border-top-right-radius: 50px;
-        margin-top: 3rem;
+        //margin-top: 3rem;
+    }
+    &__main{
+        @include flex__config(row, start, space-evenly);
+        width: 100%;
     }
     &__row{
-        @include flex__config(row, start, space-between);
+        @include flex__config(row, start, space-evenly);
         flex-wrap: wrap;
         margin-top: 1rem;
+    }
+    &__col{
+        @include flex__config(column, center, center);
+        width: 33%;
     }
     &__item{
         @include flex__config(column, start, space-between);
@@ -148,4 +155,24 @@ Facilidad y motivación para aprender cosas nuevas
 .forty{
     width: 860px;
     height: 350px;
+}
+
+.custom-shape-divider-top-1647640737 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1647640737 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1647640737 .shape-fill {
+    fill: #008DD5;
 }
